@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>809</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImport_Full_Program"/>
+    <addaction name="separator"/>
+    <addaction name="actionExport_Full_Program"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="title">
+     <string>Info</string>
+    </property>
+    <addaction name="actionContact"/>
+   </widget>
+   <widget class="QMenu" name="menuCompile_Run">
+    <property name="title">
+     <string>Compile and Run</string>
+    </property>
+    <addaction name="actionCompile"/>
+    <addaction name="actionCompile_and_Run"/>
+   </widget>
+   <widget class="QMenu" name="menuResources">
+    <property name="title">
+     <string>Resources</string>
+    </property>
+    <addaction name="actionIncludes"/>
+    <addaction name="actionVariables"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuCompile_Run"/>
+   <addaction name="menuResources"/>
+   <addaction name="menuInfo"/>
+  </widget>
+  <action name="actionImport_Full_Program">
+   <property name="text">
+    <string>Import xml</string>
+   </property>
+  </action>
+  <action name="actionExport_Full_Program">
+   <property name="text">
+    <string>Export xml</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionContact">
+   <property name="text">
+    <string>Contact</string>
+   </property>
+  </action>
+  <action name="actionCompile">
+   <property name="text">
+    <string>Compile</string>
+   </property>
+  </action>
+  <action name="actionCompile_and_Run">
+   <property name="text">
+    <string>Compile and Run</string>
+   </property>
+  </action>
+  <action name="actionIncludes">
+   <property name="text">
+    <string>Includes</string>
+   </property>
+  </action>
+  <action name="actionVariables">
+   <property name="text">
+    <string>Variables</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewFunctionForm</class>
+ <widget class="QFrame" name="NewFunctionForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>281</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>50</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>292</x>
+     <y>110</y>
+     <width>281</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>140</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>171</y>
+     <width>561</width>
+     <height>321</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>0</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Function name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>341</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Function Type</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>131</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Parameter type</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>90</y>
+     <width>181</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Parameter Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>161</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>510</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>140</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>261</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>int</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>string</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>double</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>char</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bool</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;int&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;string&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;double&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;char&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;bool&gt;</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>271</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>int</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>string</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>double</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>char</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>bool</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;int&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;string&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;double&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;char&gt;</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>vector&lt;bool&gt;</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

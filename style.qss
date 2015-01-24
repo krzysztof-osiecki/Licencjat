@@ -1,0 +1,18 @@
+BasePanel { border: 1 px solid black; background: transparent; }
+FunctionPanel { border: 1 px solid black; background: transparent; }
+ShortPanel { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #645132, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+ContainerPanel { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #111111, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+ShortComponent { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #315113, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+WhileBlock { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 red, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+IfBlock { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 blue, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+IfElseBlockPart { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 green, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+FunctionBlock { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 purple, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+IfElseBlockPanel { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 black, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+TextPanel { background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 gray, stop: 1 #FFFFFF); border: 2px solid gray; border-radius: 5px; margin-top: 1ex; }
+TextBlock { border: 1 px solid black; background: white; color: black; }
+QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top center; /* position at the top center */
+     padding: 0 3px;
+}
+
