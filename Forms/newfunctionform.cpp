@@ -8,7 +8,7 @@ NewFunctionForm::NewFunctionForm(FunctionBlock* parentPanel,  QWidget *parent) :
     this->parentPanel=parentPanel;
     ui->setupUi(this);
     ui->tableView->setModel(&parentPanel->parametersModel);
-    ui->comboBox->setCurrentText(this->parentPanel->type);
+    ui->comboBox->lineEdit()->setText(this->parentPanel->type);
     ui->lineEdit_2->setText(this->parentPanel->name);
     ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
 }

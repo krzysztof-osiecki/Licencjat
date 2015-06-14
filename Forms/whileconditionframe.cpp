@@ -1,5 +1,6 @@
 #include "whileconditionframe.h"
 #include "ui_whileconditionframe.h"
+#include <qregexp.h>
 
 
 WhileConditionFrame::WhileConditionFrame(BasePanel *parentPanel, QWidget *parent) :
@@ -10,13 +11,13 @@ WhileConditionFrame::WhileConditionFrame(BasePanel *parentPanel, QWidget *parent
     QList<QString> items;
     foreach(VariableModel var, BasePanel::variableModel.variables)
     {
-        if (var.type.contains(QRegularExpression("^[\\w\\s,]+<[\\w\\s,<>_]+>$"))){
+        if (var.type.contains(QRegExp("^[\\w\\s,]+<[\\w\\s,<>_]+>$"))){
             ui->comboBox->addItem(var.name+" - "+var.type);
         }
-        else if(var.name.contains(QRegularExpression(("^[\\w_]+\\[[\\w_]*\\]$")))) {
+        else if(var.name.contains(QRegExp(("^[\\w_]+\\[[\\w_]*\\]$")))) {
             ui->comboBox->addItem(var.name+" - "+var.type);
         }
-        else if(var.type.contains(QRegularExpression("^string\\s*$"))) {
+        else if(var.type.contains(QRegExp("^string\\s*$"))) {
             ui->comboBox->addItem(var.name+" - "+var.type);
         }
     }
@@ -60,17 +61,17 @@ void WhileConditionFrame::on_pushButton_3_clicked()
     QString variableUniqueId = QString::number(BasePanel::uniqueId());
     QString selected = ui->comboBox->currentText();
     QString name = selected.mid(0, selected.indexOf("-")-1);
-    if(selected.contains(QRegularExpression("string\\s*")))
+    if(selected.contains(QRegExp("string\\s*")))
     {
         body = "char & var"+variableUniqueId+": "+ name;
     }
-    else if (selected.contains(QRegularExpression("[\\w\\s,]+<[\\w\\s,<>_]+>")))
+    else if (selected.contains(QRegExp("[\\w\\s,]+<[\\w\\s,<>_]+>")))
     {
         QString variableType;
         variableType = selected.mid(selected.indexOf("<")+1, selected.lastIndexOf(">")-selected.indexOf("<")-1);
         body = variableType+" & var"+variableUniqueId+": "+name;
     }
-    else if (selected.contains(QRegularExpression(("[\\w_]+\\[[\\w_]*\\]"))))
+    else if (selected.contains(QRegExp(("[\\w_]+\\[[\\w_]*\\]"))))
     {
         QString variableType;
         name = name.mid(0, name.indexOf("["));

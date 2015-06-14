@@ -34,7 +34,7 @@ void VariablesFrame::on_pushButton_clicked()
         return;
     }
     BasePanel::variableModel.append(VariableModel(ui->comboBox->currentText(), ui->lineEdit_2->text(), ui->lineEdit_3->text()));
-    ui->comboBox->setCurrentText("");
+    ui->comboBox->lineEdit()->setText("");
     ui->lineEdit_2->setText("");
     ui->lineEdit_3->setText("");
 }

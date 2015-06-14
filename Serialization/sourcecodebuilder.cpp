@@ -4,7 +4,7 @@
 #include <QApplication>
 #include <iostream>
 #include <QProcess>
-#include <QRegularExpression>
+#include "qregexp.h"
 #include <QDir>
 #include <QMessageBox>
 QString SourceCodeBuilder::imports = QString("#include <iostream> \n")
@@ -111,7 +111,7 @@ QString SourceCodeBuilder::prepareVariables()
         if(var.value != "")
         {
             result.append(" = ");
-            if(var.type.contains(QRegularExpression("^string\\s*$")))
+            if(var.type.contains(QRegExp("^string\\s*$")))
             {
                 result.append("\"");
                 result.append(var.value);

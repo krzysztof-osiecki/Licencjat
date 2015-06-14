@@ -11,6 +11,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 CONFIG += c++11 \
     static \
     staticlib
+QMAKE_CXXFLAGS += -std=c++11 -static
 TARGET = Licencjat
 TEMPLATE = app
 
